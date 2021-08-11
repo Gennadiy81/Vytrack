@@ -23,7 +23,7 @@ Feature: Contacts page
       | System     |
 
 
-  @wip
+
   Scenario: Menu Options Sales Manager
     Given the user logged in as "sales manager"
     Then the user should see following options
@@ -60,5 +60,27 @@ Feature: Contacts page
       | user           | firstName | lastName  |
       | user10         | Brenden   | Schneider |
       | storemanager85 | Stephan   | Haley     |
+
+@wip
+    Scenario: Contact test with email
+      Given the user logged in as "sales manager"
+      And the user navigates to "Customers" "Contacts"
+      When the user clicks the "emailwillcomehere" from contacts
+      Then the information should be same with database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
